@@ -13,14 +13,22 @@ header {
     width: 100%;
 
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px var(--general-lateral-padding-page);
 }
 
 header nav {
+    width: inherit;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     box-sizing: border-box;
 
-    padding: 15px var(--lateral-marging);
+    max-width: var(--general-max-width);
+
+    /* padding: 15px var(--lateral-marging); */
 }
 
 #header-logo img {

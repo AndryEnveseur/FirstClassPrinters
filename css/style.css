@@ -4,10 +4,13 @@ body {
     box-sizing: border-box;
 
     --background-website: #f4f4f4;
-    --lateral-marging : 200px;
+    --lateral-marging : 325px;
     --text-color: rgb(62, 62, 62);
     --title-color: rgb(54, 54, 54);
     --text-family: sans-serif;
+
+    --general-max-width: 1200px;
+    --general-lateral-padding-page: 50px;
 
     background-color: var(--background-website);
 }
