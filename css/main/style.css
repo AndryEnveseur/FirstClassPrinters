@@ -291,3 +291,9 @@ main {
         font-size: 1.1em;
     }
 }
+
+@media (min-width: 400px) {
+    .best-features-container > div {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
