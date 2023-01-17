@@ -262,3 +262,9 @@ main {
     display: flex;
     font-weight: bold;
 }
+
+@media (max-width: 700px) {
+    main {
+        padding-top: 100px;
+    }
+}
