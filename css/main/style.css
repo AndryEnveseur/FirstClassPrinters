@@ -162,6 +162,7 @@ main {
 
     margin-top: 30px;
     color: var(--title-color);
+    text-align: center;
 }
 
 .water-drops {
