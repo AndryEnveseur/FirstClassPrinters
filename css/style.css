@@ -13,3 +13,9 @@ body {
 
     background-color: var(--background-website);
 }
+
+@media (max-width: 450px) {
+    body {
+        --general-lateral-padding-page: 25px;
+    }
+}

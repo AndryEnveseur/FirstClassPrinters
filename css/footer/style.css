@@ -34,7 +34,7 @@ footer .footer-top-container {
 
 footer .footer-top-container > div {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
     width: 100%;
     grid-auto-rows: minmax(auto, 100%);
 
@@ -97,4 +97,14 @@ footer #made-in-britain {
 
 footer .footer-top-container a:hover {
     background-size: 0 2px, 100% 2px;
+}
+
+@media (max-width: 400px) {
+
+    .customer-services li:last-of-type {
+        width: 200px;
+    }
+    footer #payment-accept {
+        width: 100%;
+    }
 }

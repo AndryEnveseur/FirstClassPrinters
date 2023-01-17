@@ -35,7 +35,7 @@ main {
 
 .best-features-container > div {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
     width: 100%;
     grid-auto-rows: minmax(auto, 100%);
     grid-gap: 20px;
@@ -96,10 +96,10 @@ main {
     width: 100%;
 
     background-image: url(../../img/Sandra-background-big.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
 
     background-attachment: fixed;
-    background-size: auto;
     box-sizing: border-box;
     padding: var(--general-lateral-padding-page);
 }
@@ -108,6 +108,7 @@ main {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    
     align-items: center;
     max-width: var(--general-max-width);
     box-sizing: border-box;
@@ -134,7 +135,6 @@ main {
     height: 350px;
     width: 350px;
 }
-
 
 .more-features-icon {
     width: 90px;
@@ -250,7 +250,7 @@ main {
     justify-content: center;
     text-align: center;
     width: 250px;
-    height: 300px;
+    height: 100%;
     font-size: 16px;
     font-family: sans-serif;
     color: var(--text-color);
@@ -266,5 +266,28 @@ main {
 @media (max-width: 700px) {
     main {
         padding-top: 100px;
+    }
+}
+
+@media (max-width: 400px) {
+    .water-drops .drop {
+        width: 250px;
+        height: 250px;
+    }
+
+    .drop .drop-content p {
+        width: 200px;
+        height: 100%;
+        font-size: 13px;
+
+        line-height: 21px;
+    }
+
+    .more-features img:first-of-type {
+        width: 80%;
+    }
+    
+    .why-choose-container h1 {
+        font-size: 1.1em;
     }
 }
