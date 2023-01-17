@@ -60,12 +60,6 @@ main {
 
     font-family: var(--text-family);
     font-size: 1rem;
-    /* width: 380px; */
-    /* min-width: 120px; */
-    flex-wrap: wrap;
-    /* width: 100%; */
-    /* margin-right: 15px; */
-    /* max-height: 300px; */
 }
 
 .best-features img {
@@ -284,11 +278,17 @@ main {
     }
 
     .more-features img:first-of-type {
-        width: 80%;
+        /* max-width: 300px; */
+        width: 70%;
     }
     
     .why-choose-container h1 {
         font-size: 1.1em;
+    }
+
+    .best-features {
+        padding: 15px;
+        flex-wrap: wrap;
     }
 }
 
