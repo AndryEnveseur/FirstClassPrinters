@@ -96,10 +96,10 @@ main {
     width: 100%;
 
     background-image: url(../../img/Sandra-background-big.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
 
     background-attachment: fixed;
+    background-size: auto;
     box-sizing: border-box;
     padding: var(--general-lateral-padding-page);
 }
