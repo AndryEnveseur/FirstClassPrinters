@@ -36,7 +36,7 @@ footer .footer-top-container > div {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
     width: 100%;
-    grid-auto-rows: minmax(auto, 100%);
+    /* grid-auto-rows: minmax(auto, 100%); */
 
     box-sizing: border-box;
     max-width: var(--general-max-width);
@@ -100,11 +100,19 @@ footer .footer-top-container a:hover {
 }
 
 @media (max-width: 400px) {
-
     .customer-services li:last-of-type {
         width: 200px;
     }
     footer #payment-accept {
         width: 100%;
     }
+
+
+}
+
+@media (min-width: 400px) {
+    footer .footer-top-container > div {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        /* grid-auto-rows: minmax(auto, 100%); */
+    
 }
