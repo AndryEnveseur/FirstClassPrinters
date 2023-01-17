@@ -3,7 +3,7 @@ main {
 
     box-sizing: border-box;
 
-    /* padding-top: 145px; */
+    padding-top: 135px;
 
     /* height: 1000px; */
     display: flex;
@@ -102,9 +102,7 @@ main {
     background-repeat: no-repeat;
 
     background-attachment: fixed;
-    /* padding: 50px var(--lateral-marging); */
     box-sizing: border-box;
-    /* border: 1px solid black; */
     padding: var(--general-lateral-padding-page);
 }
 
@@ -129,7 +127,6 @@ main {
     backdrop-filter: blur( 6.5px );
     -webkit-backdrop-filter: blur( 6.5px );
 
-    /* margin-right: 20px; */
     box-sizing: border-box;
     padding: 20px 0px 0px 0px; 
 
@@ -143,7 +140,6 @@ main {
 
 .more-features-icon {
     width: 90px;
-    /* height: 100px; */
 }
 
 
@@ -176,28 +172,11 @@ main {
     justify-content: center;
     align-items: center;
     gap: 40px 40px;
-    /* border: 1px solid black; */
     width: 100%;
     box-sizing: border-box;
     flex-wrap: wrap;
-    padding: 50px 0;
+    padding: 30px var(--general-lateral-padding-page);
 }
-
-/* .water-drops .drop {
-    position: relative;
-    width: 300px;
-    height: 300px;
-
-    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
-                25px 53px 20px rgba(0, 0, 0, 0.05),
-                25px 30px 30px rgba(0, 0, 0, 0.05),
-                inset -20px -20px 25px rgba(255, 255, 255, 0.9);
-    transition: 0.5s ease-in-out;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-} */
 
 .water-drops .drop {
     position: relative;
@@ -210,7 +189,6 @@ main {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    /* padding: 10px 50px; */
 }
 
 
@@ -225,12 +203,12 @@ main {
 
 .drop:nth-child(2) {
     background: rgba(255, 247, 175, 0.2);
-    border-radius: 59% 41% 44% 56% / 62% 49% 51% 38%;
+    border-radius: 55% 41% 50% 56% / 62% 49% 51% 38%;
 }
 
 .drop:nth-child(3) {
     background: rgba(255, 175, 232, 0.2);
-    border-radius: 70% 30% 41% 59% / 53% 42% 58% 47%;
+    border-radius: 70% 40% 57% 59% / 53% 42% 58% 47%;
 }
 
 .drop:nth-child(4) {
@@ -263,25 +241,25 @@ main {
 }
 
 .drop .drop-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    /* padding: 40px; */
-    /* gap: 15px; */
-    /* border: 1px solid black; */
+    z-index: 1;
 }
 
-.drop .drop-content h2 {
+.drop .drop-content p {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     width: 250px;
     height: 300px;
-    /* background-color: red; */
-    /* z-index: 1; */
     font-size: 16px;
     font-family: sans-serif;
     color: var(--text-color);
+    font-weight: 100;
+    line-height: 21px;
+}
+
+.drop .drop-content p span {
+    display: flex;
+    font-weight: bold;
 }
