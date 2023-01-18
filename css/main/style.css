@@ -130,6 +130,14 @@ main {
     width: 350px;
 }
 
+.more-features {
+    transition: transform 400ms ease-in-out;
+}
+
+.more-features:hover {
+    transform: translateY(-10px);
+}
+
 .more-features-icon {
     width: 90px;
 }
