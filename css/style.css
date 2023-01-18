@@ -16,6 +16,6 @@ body {
 
 @media (max-width: 450px) {
     body {
-        --general-lateral-padding-page: 25px;
+        --general-lateral-padding-page: 20px;
     }
 }

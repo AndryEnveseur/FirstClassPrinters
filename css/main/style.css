@@ -47,7 +47,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
 
     box-sizing: border-box;
     border-radius: 10px;
@@ -60,6 +59,15 @@ main {
 
     font-family: var(--text-family);
     font-size: 1rem;
+}
+
+.best-features > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    gap: 20px;
 }
 
 .best-features img {
@@ -303,12 +311,20 @@ main {
 }
 
 .need-more-advice h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.64);
 
     font-size: 2.7em;
     letter-spacing: 5px;
     text-align: right;
     width: 100%;
+}
+
+.need-more-advice h2 span:first-of-type {
+    margin-right: 15px;
 }
 
 .need-more-advice section > div {
@@ -411,16 +427,55 @@ main {
     }
 }
 
-@media (min-width: 400px) {
+@media (min-width: 700px) {
     .best-features-container > div {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media (max-width: 750px) {
+    .best-features {
+        padding: 15px 20px;
+        width: 100%;
+    }
+
+    .best-features > div {
+        width: 70%;
+    }
+}
+
+@media (max-width: 700px) {
     .need-more-advice,
     .more-features-container {
         background-attachment: scroll;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .more-features {
+        height: 300px;
+        width: 250px;
+    }
+
+    .best-features {
+        display: flex;
+    }
+
+    .best-features > div {
+        width: 100%;
+    }
+
+    .best-features > div > div {
+        width: 100%;
+    }
+
+    .need-more-advice h2 {
+        font-size: 1.3em;
+    }
+
+    .need-more-advice h2 span:first-of-type {
+        margin-right: 0;
     }
 }
 
