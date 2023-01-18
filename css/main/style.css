@@ -449,6 +449,15 @@ main {
     .more-features-container {
         background-attachment: scroll;
     }
+
+    .need-more-advice h2 {
+        font-size: 1.4em;
+    }
+
+    
+    .need-more-advice h2 span:first-of-type {
+        margin-right: 0;
+    }
 }
 
 
@@ -472,10 +481,6 @@ main {
 
     .need-more-advice h2 {
         font-size: 1.3em;
-    }
-
-    .need-more-advice h2 span:first-of-type {
-        margin-right: 0;
     }
 }
 
