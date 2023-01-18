@@ -114,14 +114,14 @@ main {
 .more-features {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     backdrop-filter: blur( 6.5px );
     -webkit-backdrop-filter: blur( 6.5px );
 
     box-sizing: border-box;
-    padding: 20px 0px 0px 0px; 
+    padding: 40px 0px 40px 0px; 
 
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.396);
     gap: 20px;
@@ -132,6 +132,11 @@ main {
 
 .more-features {
     transition: transform 400ms ease-in-out;
+}
+
+.more-features > img:first-of-type {
+    width: 70%;
+    /* border: 1px solid red; */
 }
 
 .more-features:hover {
@@ -266,52 +271,83 @@ main {
 }
 
 .need-more-advice {
-    /* border: 1px solid black; */
     width: 100%;
     height: 400px;
     margin-top: 50px;
-    /* background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../img/need-more-advice.jpg); */
-    /* background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../../img/need-more-advice.jpg);
-     */
-     background-image: url(../../img/Sandra-background-big.jpg);
-     /* background-image: url(../../img/test.png),linear-gradient(150deg,#ffba61 0%,#ffe970 100%)!important; */
+    background-image: url(../../img/Sandra-background-big.jpg);
 
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-position: center top; */
     background-attachment: fixed;
-    /* filter:invert() */
 
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    /* text-align: center; */
     font-family: var(--text-family);
     color: white;
     font-size: 1rem;
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.64);
     box-sizing: border-box;
-}
-
-.need-more-advice section {
-    max-width: var(--general-max-width);
     padding: 10px var(--general-lateral-padding-page);
 }
 
+.need-more-advice section {
+    width: 100%;
+    max-width: var(--general-max-width);
+    /* border: 1px solid black; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
 .need-more-advice h2 {
-    font-size: 2.6em;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.64);
+
+    font-size: 2.7em;
     letter-spacing: 5px;
+    text-align: right;
+    width: 100%;
+}
+
+.need-more-advice section > div {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+}
+
+.need-more-advice section > div span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.need-more-advice section > div svg {
+    width: 40px;
+    margin: 10px 15px 10px 0;
+    fill: #725A42;
+}
+
+.need-more-advice section > div svg:last-of-type {
+    margin: 10px 15px 10px 40px;
 }
 
 .need-more-advice p {
     line-height: 1.5;
-    font-size: 1.1em;
-    font-weight: lighter;
+    font-size: 1.35em;
+    font-weight: 400;
+    /* padding: 10px 0; */
+    text-align: center;
+    box-sizing: border-box;
+    color: #725A42 ;
 }
 
 .need-more-advice p span {
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 1.5em;
 }
 
 @media (max-width: 700px) {
@@ -385,5 +421,27 @@ main {
     .need-more-advice,
     .more-features-container {
         background-attachment: scroll;
+    }
+}
+
+@media (max-width: 1350px) {
+    .need-more-advice section > div svg {
+        fill: white;
+    }
+
+    .need-more-advice h2 {
+        text-align: center;
+    }
+
+    .need-more-advice section > div {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .need-more-advice section > div p {
+        color: white;
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3),
+                    -5px -5px 10px rgba(0, 0, 0, 0.3);
     }
 }
