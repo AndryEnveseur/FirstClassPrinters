@@ -453,8 +453,8 @@ main {
     }
 
     .more-features img:first-of-type {
-        /* max-width: 300px; */
         width: 100%;
+        height: auto;
         padding: 0 30px;
         box-sizing: border-box;
     }
