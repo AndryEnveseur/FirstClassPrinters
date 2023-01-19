@@ -489,6 +489,10 @@ main {
         width: 300px;
     }
 
+    .more-features img:first-of-type {
+        height: auto;
+    }
+
     .best-features {
         display: flex;
     }
