@@ -97,7 +97,7 @@ main {
 
     width: 100%;
 
-    background-image: url(../../img/Sandra-background-big.jpg);
+    background-image: url(../../img/background-big.webp);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -282,7 +282,7 @@ main {
     width: 100%;
     height: 400px;
     margin-top: 50px;
-    background-image: url(../../img/Sandra-background-big.jpg);
+    background-image: url(../../img/background-big.webp);
 
     background-size: cover;
     background-repeat: no-repeat;
