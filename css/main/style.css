@@ -159,13 +159,13 @@ main {
 }
 
 .more-features #printing-and-supplying {
-    color: #8d7e79;
+    color: #776461;
     font-weight: bold;
     font-size: 1.1em;
 }
 
 .more-features #around {
-    color: #8d7e79;
+    color: #776461;    
     font-size: 1em;
 }
 
@@ -176,7 +176,7 @@ main {
 }
 
 .more-features #envelopes-per-month {
-    color: #8d7e79;
+    color: #776461;
     font-size: 1em;
 }
 
@@ -188,26 +188,26 @@ main {
 }
 
 .more-features #manufactured {
-    color: #587a61;
+    color: #2e4e43;
     font-size: 1.3em;
     line-height: 1.5;
     font-weight: bold;
 }
 
 .more-features #envelopes {
-    color: #587a61;
+    color: #2e4e43;
     font-size: 1.3em;
     font-weight: bold;
 }
 
 .more-features #available {
-    color: #718478;
+    color: #2e4e43;
     font-size: 1.2em;
     line-height: 2;
 }
 
 .more-features #we-provide-a {
-    color: #718478;
+    color: #c0ccca;
 }
 
 .more-features #professional {
@@ -232,8 +232,7 @@ main {
 }
 
 .more-features #service {
-    color: #728378;
-    font-size: 1.1em;
+    color: #c0ccca;
 }
 
 
