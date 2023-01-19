@@ -142,10 +142,36 @@ main {
     transition: transform 400ms ease-in-out;
 }
 
-.more-features > img:first-of-type {
-    /* width: 70%; */
-    /* border: 1px solid red; */
+.more-features > div {
+    font-family: var(--text-family);
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    text-transform: uppercase;
 }
+
+.more-features #printing-and-supplying {
+    color: #8d7e79;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.more-features #around {
+    color: #8d7e79;
+    font-size: 1em;
+}
+
+.more-features #ten-million {
+    font-size: 2.4em;
+    color: #776461;
+    font-weight: bold;
+}
+
+.more-features #envelopes-per-month {
+    color: #8d7e79;
+    font-size: 1em;
+}
+
 
 .more-features:hover {
     transform: translateY(-10px);
@@ -452,12 +478,12 @@ main {
         line-height: 21px;
     }
 
-    .more-features img:first-of-type {
+    /* .more-features img:first-of-type {
         width: 100%;
         height: auto;
         padding: 0 30px;
         box-sizing: border-box;
-    }
+    } */
     
     .why-choose-container h1 {
         font-size: 1.1em;
@@ -486,9 +512,9 @@ main {
         width: 300px;
     }
 
-    .more-features img:first-of-type {
+    /* .more-features img:first-of-type {
         height: auto;
-    }
+    } */
 
     .best-features {
         display: flex;
