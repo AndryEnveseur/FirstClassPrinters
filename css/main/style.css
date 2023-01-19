@@ -464,7 +464,7 @@ main {
 @media (max-width: 400px) {
     .more-features {
         height: 300px;
-        width: 250px;
+        width: 300px;
     }
 
     .best-features {
