@@ -385,45 +385,25 @@ main {
     }
 }
 
-@media (max-width: 400px) {
-    .water-drops .drop {
-        width: 250px;
-        height: 250px;
-    }
-
-    .drop .drop-content p {
-        width: 200px;
-        height: 100%;
-        font-size: 13px;
-
-        line-height: 21px;
-    }
-
-    .more-features img:first-of-type {
-        /* max-width: 300px; */
-        width: 70%;
-    }
-    
-    .why-choose-container h1 {
-        font-size: 1.1em;
-    }
-
-    .best-features {
-        padding: 15px;
-        flex-wrap: wrap;
+@media (max-width: 1350px) {
+    .need-more-advice section > div svg {
+        fill: white;
     }
 
     .need-more-advice h2 {
-        font-size: 1.6em;
+        text-align: center;
     }
 
-    .need-more-advice p {
-        font-size: .9em;
+    .need-more-advice section > div {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 
-    .need-more-advice p span {
-        font-weight: bold;
-        font-size: 1.1em;
+    .need-more-advice section > div p {
+        color: white;
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3),
+                    -5px -5px 10px rgba(0, 0, 0, 0.3);
     }
 }
 
@@ -462,8 +442,50 @@ main {
 
 
 @media (max-width: 400px) {
+    .water-drops .drop {
+        width: 250px;
+        height: 250px;
+    }
+
+    .drop .drop-content p {
+        width: 200px;
+        height: 100%;
+        font-size: 13px;
+
+        line-height: 21px;
+    }
+
+    .more-features img:first-of-type {
+        /* max-width: 300px; */
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+    
+    .why-choose-container h1 {
+        font-size: 1.1em;
+    }
+
+    .best-features {
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+
+    .need-more-advice h2 {
+        font-size: 1.6em;
+    }
+
+    .need-more-advice p {
+        font-size: .9em;
+    }
+
+    .need-more-advice p span {
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+
     .more-features {
-        height: 300px;
+        /* height: 300px; */
         width: 300px;
     }
 
@@ -481,27 +503,5 @@ main {
 
     .need-more-advice h2 {
         font-size: 1.3em;
-    }
-}
-
-@media (max-width: 1350px) {
-    .need-more-advice section > div svg {
-        fill: white;
-    }
-
-    .need-more-advice h2 {
-        text-align: center;
-    }
-
-    .need-more-advice section > div {
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-
-    .need-more-advice section > div p {
-        color: white;
-        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3),
-                    -5px -5px 10px rgba(0, 0, 0, 0.3);
     }
 }
