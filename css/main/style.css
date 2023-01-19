@@ -143,7 +143,7 @@ main {
 }
 
 .more-features > img:first-of-type {
-    width: 70%;
+    /* width: 70%; */
     /* border: 1px solid red; */
 }
 
@@ -366,25 +366,6 @@ main {
     font-size: 1.5em;
 }
 
-@media (max-width: 700px) {
-    main {
-        padding-top: 100px;
-    }
-
-    .need-more-advice h2 {
-        font-size: 2em;
-    }
-
-    .need-more-advice p {
-        font-size: 1em;
-    }
-
-    .need-more-advice p span {
-        font-weight: bold;
-        font-size: 1.2em;
-    }
-}
-
 @media (max-width: 1350px) {
     .need-more-advice section > div svg {
         fill: white;
@@ -434,9 +415,25 @@ main {
         font-size: 1.4em;
     }
 
-    
     .need-more-advice h2 span:first-of-type {
         margin-right: 0;
+    }
+
+    main {
+        padding-top: 100px;
+    }
+
+    .need-more-advice h2 {
+        font-size: 2em;
+    }
+
+    .need-more-advice p {
+        font-size: 1em;
+    }
+
+    .need-more-advice p span {
+        font-weight: bold;
+        font-size: 1.2em;
     }
 }
 
