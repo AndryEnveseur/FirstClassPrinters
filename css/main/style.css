@@ -134,7 +134,7 @@ main {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.396);
     gap: 20px;
 
-    height: 350px;
+    height: 375px;
     width: 350px;
 }
 
@@ -148,6 +148,14 @@ main {
     line-height: 1.5;
     font-size: 1.1rem;
     text-transform: uppercase;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-features > div p {
+    margin: 0;
 }
 
 .more-features #printing-and-supplying {
@@ -170,6 +178,62 @@ main {
 .more-features #envelopes-per-month {
     color: #8d7e79;
     font-size: 1em;
+}
+
+.more-features #standard-and-bespoke {
+    color: #2e4e43;
+    font-size: 1.3em;
+    font-weight: bolder;
+    /* line-height: 2; */
+}
+
+.more-features #manufactured {
+    color: #587a61;
+    font-size: 1.3em;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.more-features #envelopes {
+    color: #587a61;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.more-features #available {
+    color: #718478;
+    font-size: 1.2em;
+    line-height: 2;
+}
+
+.more-features #we-provide-a {
+    color: #718478;
+}
+
+.more-features #professional {
+    color: #c0ccca;
+    font-weight: bold;
+    font-size: 1.8em;
+    line-height: 1;
+}
+
+.more-features #personal-and {
+    color: #c0ccca;
+    font-weight: bold;
+    font-size: 2.2em;
+    line-height: 1;
+}
+
+.more-features #friendly {
+    color: #c0ccca;
+    font-weight: bold;
+    font-size: 2.95em;
+    line-height: 1;
+}
+
+.more-features #service {
+    color: #728378;
+    font-size: 1.1em;
 }
 
 
