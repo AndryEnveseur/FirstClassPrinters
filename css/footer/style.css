@@ -104,7 +104,7 @@ footer .footer-top-container a:hover {
         width: 200px;
     }
     footer #payment-accept {
-        width: 100%;
+        max-width: max-content;
     }
 }
 
