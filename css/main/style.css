@@ -29,7 +29,7 @@ main {
     justify-content: center;
     align-items: center;
 
-    padding: 5px var(--general-lateral-padding-page);
+    padding: 0 var(--general-lateral-padding-page);
     width: 100%;
 }
 
@@ -494,7 +494,7 @@ main {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     .need-more-advice,
     .more-features-container {
         background-attachment: scroll;
@@ -540,13 +540,6 @@ main {
 
         line-height: 21px;
     }
-
-    /* .more-features img:first-of-type {
-        width: 100%;
-        height: auto;
-        padding: 0 30px;
-        box-sizing: border-box;
-    } */
     
     .why-choose-container h1 {
         font-size: 1.1em;
@@ -571,13 +564,8 @@ main {
     }
 
     .more-features {
-        /* height: 300px; */
         width: 300px;
     }
-
-    /* .more-features img:first-of-type {
-        height: auto;
-    } */
 
     .best-features {
         display: flex;

@@ -101,7 +101,7 @@ header nav {
 }
 
 #header-menu-mobile {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
@@ -171,22 +171,23 @@ header nav {
     visibility: visible;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     #header-logo {
         max-width: 125px;
     }
 
-    #header-menu p {
+    #header-menu {
         display: none;
     }
 
-    #header-menu svg {
-        width: 20px;
-    }
 
     header {
         backdrop-filter: blur(0px);
         background-color: white;
+    }
+
+    #header-menu-mobile {
+        display: flex;
     }
 
     #header-menu-mobile-options {
