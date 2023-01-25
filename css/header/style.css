@@ -96,6 +96,46 @@ header nav {
     width: 40px;
 }
 
+#checkbox-header-menu-mobile {
+    display: none;
+}
+
+#header-menu-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-menu-mobile label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-menu-mobile svg {
+    width: 25px;
+    fill: rgb(68, 68, 68);
+}
+
+#header-menu-mobile-options {
+    display: none;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+
+    /* top: 90px;
+    right: 112px; */
+
+    margin-top: 292px;
+    margin-right: 150px;
+
+    background-color: white;
+    box-shadow: 0px 5px 5px 5px rgba(31, 38, 135, 0.051);
+
+    border-radius: 0px 0 10px 10px;
+
+}
+
 @media (max-width: 700px) {
     #header-logo {
         max-width: 125px;
@@ -107,5 +147,15 @@ header nav {
 
     #header-menu svg {
         width: 20px;
+    }
+
+    header {
+        backdrop-filter: blur(0px);
+        background-color: white;
+    }
+
+    #header-menu-mobile-options {
+        display: flex;
+        margin-top: 271px;
     }
 }
