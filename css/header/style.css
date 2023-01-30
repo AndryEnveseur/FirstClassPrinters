@@ -167,11 +167,28 @@ header nav {
     margin-left: 7px;
 }
 
+#checkbox-header-menu-mobile ~ #header-menu-mobile-options {
+    transition-duration: 400ms, 400ms;
+    transition-property: opacity, transform;
+    transition-timing-function: ease-in, ease-in-out;
+}
+
 #checkbox-header-menu-mobile:not(:checked) ~ #header-menu-mobile-options {
     visibility: hidden;
+    opacity: 0;
+
+    transition-duration: 400ms, 400ms;
+    transform: translateY(-50px);
+    transition-timing-function: ease-in, ease-in-out;
+
 }
+
 #checkbox-header-menu-mobile:checked ~ #header-menu-mobile-options {
     visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-timing-function: ease-in, ease-in-out;
+    transition-duration: 400ms, 400ms;
 }
 
 @media (max-width: 900px) {
