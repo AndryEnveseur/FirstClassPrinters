@@ -203,6 +203,34 @@ header nav {
     transform: translateY(0px);
 }
 
+#header-menu-mobile-bg {
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    background-color: transparent;
+
+    left: 0;
+    top: 70px;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition-property: opacity, visibility;
+    transition-duration: 300ms, 0s;
+    transition-delay: 0, 0s;
+    transition-timing-function: ease-in;
+}
+
+#checkbox-header-menu-mobile:checked + label[for="checkbox-header-menu-mobile"] > #header-menu-mobile-bg {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, transparent);
+    opacity: 1;
+    visibility: visible;
+
+    transition-property: opacity, visibility;
+    transition-delay: 0, 1s;
+}
+
 @media (max-width: 900px) {
     #header-logo {
         max-width: 125px;
