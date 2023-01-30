@@ -168,27 +168,27 @@ header nav {
 }
 
 #checkbox-header-menu-mobile ~ #header-menu-mobile-options {
-    transition-duration: 400ms, 400ms;
-    transition-property: opacity, transform;
-    transition-timing-function: ease-in, ease-in-out;
+    transition-duration: 290ms, 300ms, 0;
+    transition-property: opacity, transform, visibility;
+    transition-timing-function: ease-in-out;
 }
 
 #checkbox-header-menu-mobile:not(:checked) ~ #header-menu-mobile-options {
     visibility: hidden;
     opacity: 0;
 
-    transition-duration: 400ms, 400ms;
-    transform: translateY(-50px);
-    transition-timing-function: ease-in, ease-in-out;
+    transition-duration: 290ms, 300ms, 300ms;
 
+    transform: translateY(-40px);
 }
 
 #checkbox-header-menu-mobile:checked ~ #header-menu-mobile-options {
     visibility: visible;
     opacity: 1;
+
+    transition-duration: 290ms, 300ms, 300ms;
+
     transform: translateY(0px);
-    transition-timing-function: ease-in, ease-in-out;
-    transition-duration: 400ms, 400ms;
 }
 
 @media (max-width: 900px) {
