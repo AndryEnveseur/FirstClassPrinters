@@ -223,14 +223,14 @@ header nav {
     opacity: 1;
     visibility: visible;
 
-    transition-duration: 300ms, 0;
+    transition-duration: 300ms, 300ms;
 }
 
 #checkbox-header-menu-mobile:not(:checked) + label[for="checkbox-header-menu-mobile"] > #header-menu-mobile-bg {
     visibility: hidden;
     opacity: 0;
 
-    transition-duration: 300ms, 1s;
+    transition-duration: 300ms, 300ms;
 }
 
 @media (max-width: 900px) {
