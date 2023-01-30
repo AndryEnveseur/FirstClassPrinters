@@ -177,7 +177,7 @@ header nav {
     visibility: hidden;
     opacity: 0;
 
-    transition-duration: 290ms, 300ms, 300ms;
+    transition-duration: 200ms, 300ms, 300ms;
 
     transform: translateY(-40px);
 }
