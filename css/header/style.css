@@ -167,92 +167,13 @@ header nav {
     margin-left: 7px;
 }
 
-#checkbox-header-menu-mobile ~ #header-menu-mobile-options {
-    transition-duration: 290ms, 
-                         300ms, 
-                         0, 
-                         300ms;
-    transition-property: opacity, 
-                         transform, 
-                         visibility, 
-                         border-radius;
-    transition-timing-function: ease-in-out;
-}
-
-#checkbox-header-menu-mobile:not(:checked) ~ #header-menu-mobile-options {
-    visibility: hidden;
-    opacity: 0;
-    border-radius: 0 0 100px 100px;
-
-    transition-duration: 200ms, 
-                         300ms, 
-                         300ms, 
-                         300ms;
-    transform: translateY(-40px);
-}
-
-#checkbox-header-menu-mobile:checked ~ #header-menu-mobile-options {
-    visibility: visible;
-    opacity: 1;
-    border-radius: 0;
-
-    transition-duration: 290ms, 
-                         300ms, 
-                         300ms, 
-                         300ms;
-    transform: translateY(0px);
-}
-
-#header-menu-mobile-bg {
-    width: 100vw;
-    height: 100vh;
-
-    position: absolute;
-
-    left: 0;
-    top: 70px;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, transparent);
-
-    transition-duration: 300ms, 0;
-    transition-property: opacity, visibility;
-    transition-timing-function: ease-in-out;
-}
-
-#checkbox-header-menu-mobile:checked + label[for="checkbox-header-menu-mobile"] > #header-menu-mobile-bg {
-
-    opacity: 1;
-    visibility: visible;
-
-    transition-duration: 300ms, 300ms;
-}
-
-#checkbox-header-menu-mobile:not(:checked) + label[for="checkbox-header-menu-mobile"] > #header-menu-mobile-bg {
-    visibility: hidden;
-    opacity: 0;
-
-    transition-duration: 300ms, 300ms;
-}
-
 @media (max-width: 900px) {
     #header-logo {
         max-width: 125px;
     }
 
-    #header-menu {
-        display: none;
-    }
-
     header {
         backdrop-filter: blur(0px);
         background-color: white;
-    }
-
-    #header-menu-mobile {
-        display: flex;
-    }
-
-    #header-menu-mobile-options {
-        display: flex;
-        top: 65px;
     }
 }
