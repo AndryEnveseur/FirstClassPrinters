@@ -108,6 +108,17 @@ footer .footer-top-container a:hover, footer .footer-top-container a:active {
     }
 }
 
+@media (max-width: 380px) {
+    footer #payment-accept {
+        height: auto;
+        width: 100%;
+    }
+
+    .customer-services li:last-of-type {
+        width: auto;
+    }
+}
+
 @media (min-width: 400px) {
     footer .footer-top-container > div {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
