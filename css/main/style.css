@@ -269,6 +269,10 @@ main {
     text-align: center;
 }
 
+.why-choose-container h1 {
+    padding: 0 var(--general-lateral-padding-page);
+}
+
 .water-drops {
     position: relative;
     display: flex;
@@ -581,5 +585,51 @@ main {
 
     .need-more-advice h2 {
         font-size: 1.3em;
+    }
+
+    .more-features #printing-and-supplying {
+        font-size: .9em;
+    }
+
+    .more-features #around {
+        font-size: .8em;
+    }
+
+    .more-features #ten-million {
+        font-size: 2em;
+    }
+
+    .more-features #envelopes-per-month {
+        font-size: .85em;
+    }
+
+    .more-features #standard-and-bespoke,
+    .more-features #manufactured,
+    .more-features #envelopes {
+        font-size: 1em;
+    }
+
+    .more-features #available {
+        font-size: .9em;
+    }
+
+    .more-features #we-provide-a {
+        font-size: 1em;
+    }
+
+    .more-features #professional {
+        font-size: 1.4em;
+    }
+
+    .more-features #personal-and {
+        font-size: 1.7em;
+    }
+
+    .more-features #friendly {
+        font-size: 2.3em;
+    }
+
+    .more-features #service {
+        font-size: 1.1em;
     }
 }
