@@ -236,7 +236,7 @@ main {
 }
 
 
-.more-features:hover {
+.more-features:hover, .more-features:active {
     transform: translateY(-10px);
 }
 
@@ -295,7 +295,7 @@ main {
 }
 
 
-.water-drops .drop:hover {
+.water-drops .drop:hover, .water-drops .drop:active {
     border-radius: 50%;
 }
 
