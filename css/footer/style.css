@@ -54,7 +54,7 @@ footer .footer-top-container li {
 }
 
 footer .footer-top-container a {
-    color: white;
+    color: rgb(230, 228, 228);
     text-decoration: none;
     margin: 0;
     padding: 0 0 5px 0;
@@ -75,6 +75,7 @@ footer .footer-top-container a {
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
     transition: background-size 400ms;
+    font-size: .9em;
 }
 
 footer .footer-top-container p {
