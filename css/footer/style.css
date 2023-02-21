@@ -100,9 +100,6 @@ footer .footer-top-container a:hover, footer .footer-top-container a:active {
 }
 
 @media (max-width: 400px) {
-    .customer-services li:last-of-type {
-        width: 200px;
-    }
     footer #payment-accept {
         max-width: max-content;
     }
@@ -112,10 +109,6 @@ footer .footer-top-container a:hover, footer .footer-top-container a:active {
     footer #payment-accept {
         height: auto;
         width: 100%;
-    }
-
-    .customer-services li:last-of-type {
-        width: auto;
     }
 }
 
