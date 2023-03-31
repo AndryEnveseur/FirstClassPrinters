@@ -1,3 +1,7 @@
+:root {
+    --envelope-width: 200px;
+}
+
 body {
     display: grid;
     place-items: center;
@@ -30,8 +34,8 @@ main > div:last-of-type {
     }
 }
 
-.envelope-button {
-    width: 200px;
+.envelope-front {
+    width: var(--envelope-width);
     border: 1px solid rgba(109, 71, 39, 0.205);    
     border-top: 0;
     height: 125px;
@@ -54,52 +58,54 @@ main > div:last-of-type {
     transform: translateZ(10px);
 }
 
-.envelope-button > div {
+.envelope-front > div {
     position: relative;
     box-sizing: border-box;
 }
 
-.envelope-button > div:nth-child(2) > div {
+.envelope-front > div:nth-child(2) > div {
     overflow: hidden;
     /* position: relative; */
 }
 
-.envelope-button > div > div {
+.envelope-front > div > div {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
 }
 
-.envelope-button > div > div > div {
+.envelope-front > div > div > div {
     box-sizing: border-box;
 }
 
-.envelope-button .envelope-top {
+.envelope-top {
     position: absolute;
-    height: 100px;
-    width: inherit;
+    height: 200px;
+    width: var(--envelope-width);
+
     box-sizing: border-box;
 
     /* --transform: translateY(-100px) translateX(-1px) translateZ(100px) skew(0deg, 0deg); */
-    --transform: translateX(0px) translateY(-100px) translateZ(0px);
+    --transform: translateX(0px) translateY(0px) translateZ(-1px);
     transform: var(--transform);
     -webkit-transform: var(--transform);
     -moz-transform: var(--transform);
-    -o-transform: var(--transform);;
+    -o-transform: var(--transform);
 
-    z-index: -1;
+    /* border: 1px solid red; */
+
     overflow: hidden;
 }
 
-.envelope-button .envelope-top > div {
+.envelope-top > div {
     box-sizing: border-box;
     border-radius: 10px 0 0 0;
     border: 1px solid rgba(109, 71, 39, 0.205);    
 
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
 
-    --transform: rotateZ(44.5deg) translateX(2px) translateY(5px) translateX(38px);
+    --transform: rotateZ(45deg) translateX(0px) translateY(0px) translateX(0px);
     transform: var(--transform);
     -webkit-transform: var(--transform);
     -moz-transform: var(--transform);
@@ -109,7 +115,7 @@ main > div:last-of-type {
     background-position: center;
 }
 
-.envelope-button .envelope-left {
+.envelope-front .envelope-left {
     position: absolute;
     top: 0;
     left: 0;
@@ -134,7 +140,7 @@ main > div:last-of-type {
     background-position: center;
 }
 
-.envelope-button .envelope-right {
+.envelope-front .envelope-right {
     position: absolute;
     top: 0;
     right: 0;
@@ -159,7 +165,7 @@ main > div:last-of-type {
     background-position: center;
 }
 
-.envelope-button .envelope-bottom {
+.envelope-front .envelope-bottom {
     position: absolute;
     top: 0;
     left: 0;
@@ -193,18 +199,16 @@ main > div:last-of-type {
     transition-duration: 400ms;
 
     transform: translateY(-125px) translateZ(0px);
-
-    border: 1px solid black;
 }
 
 .page-loaded {
     /* transform: translateY(-200px) translateZ(1px); */
 }
 
-a:hover ~ .envelope-content, 
-a:active ~ .envelope-content,
-a:focus ~ .envelope-content {
-    /* transform: translateY(-30px) translateZ(1px); */
+a:hover ~ .envelope-scene .envelope-content, 
+a:active ~ .envelope-scene .envelope-content,
+a:focus ~ .envelope-scene .envelope-content {
+    transform: translateY(-200px);
 }
 
 .envelope-content > div {
@@ -251,7 +255,7 @@ a:focus ~ .envelope-content > div {
     font-size: .8em;
 }
 
-.envelope-button {
+.envelope-front {
     /* margin: 80px 0 30px 0; */
 
     transform: translateZ(1px);
@@ -314,19 +318,19 @@ a:hover {
 
 @supports (-webkit-touch-callout: none) {
     /* CSS specific to iOS devices */ 
-    /* .envelope-button {
+    /* .envelope-front {
         background-image: none;
         box-shadow: none;
     }
 
-    .envelope-button .envelope-top,
-    .envelope-button .envelope-left,
-    .envelope-button .envelope-right,
-    .envelope-button .envelope-bottom {
+    .envelope-front .envelope-top,
+    .envelope-front .envelope-left,
+    .envelope-front .envelope-right,
+    .envelope-front .envelope-bottom {
         display: none;
     } */
 
-    .envelope-button {
+    .envelope-front {
         position: relative;
     }
 }
