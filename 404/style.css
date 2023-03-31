@@ -14,6 +14,22 @@ main {
     flex-direction: column-reverse;
 }
 
+main > div:last-of-type {
+    transform-style: preserve-3d;
+    /* animation-name: identifier; */
+    animation-duration: 10s;
+}
+
+@keyframes identifier {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
 .envelope-button {
     width: 200px;
     border: 1px solid rgba(109, 71, 39, 0.205);    
@@ -23,7 +39,6 @@ main {
     position: relative;
 
     box-sizing: border-box;
-    z-index: 0;
 
     /* background-image: url(./src/kraftreciclado_recortado.webp); */
     background-position: center;
@@ -34,7 +49,9 @@ main {
     border: 0;
     padding: 0;
 
-    transform-style: flat;
+    transform-style: preserve-3d;
+
+    transform: translateZ(10px);
 }
 
 .envelope-button > div {
@@ -166,26 +183,28 @@ main {
 
 .envelope-content {
     position: absolute;
-    width: inherit;
+    width: 200px;
     box-sizing: border-box;
     height: 125px;
 
     padding: 10px;
-    z-index: -1;
+    /* z-index: -1; */
 
     transition-duration: 400ms;
+
+    transform: translateY(-125px) translateZ(0px);
 
     border: 1px solid black;
 }
 
 .page-loaded {
-    transform: translateY(-80px) translateZ(1px);
+    /* transform: translateY(-200px) translateZ(1px); */
 }
 
 a:hover ~ .envelope-content, 
 a:active ~ .envelope-content,
 a:focus ~ .envelope-content {
-    transform: translateY(-30px) translateZ(1px);
+    /* transform: translateY(-30px) translateZ(1px); */
 }
 
 .envelope-content > div {
@@ -209,13 +228,13 @@ a:focus ~ .envelope-content {
     transition-duration: 1s;
 }
 
-a:hover ~ .envelope-button .envelope-content > div,
-a:active ~ .envelope-button .envelope-content > div,
-a:focus ~ .envelope-button .envelope-content > div {
+a:hover ~ .envelope-content > div,
+a:active ~ .envelope-content > div,
+a:focus ~ .envelope-content > div {
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0);
 }
 
-.envelope-button .envelope-content h3 {
+.envelope-content h3 {
     display: grid;
     place-items: center;
 
@@ -224,16 +243,18 @@ a:focus ~ .envelope-button .envelope-content > div {
     margin: 0;
 }
 
-.envelope-button .envelope-content h3 span:first-of-type {
+.envelope-content h3 span:first-of-type {
     font-size: 1.7em;
 }
 
-.envelope-button .envelope-content h3 span:last-of-type {
+.envelope-content h3 span:last-of-type {
     font-size: .8em;
 }
 
 .envelope-button {
     /* margin: 80px 0 30px 0; */
+
+    transform: translateZ(1px);
 }
 
 .error-message {
