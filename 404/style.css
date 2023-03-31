@@ -21,18 +21,7 @@ main {
 
 main > div:last-of-type {
     transform-style: preserve-3d;
-    /* animation-name: identifier; */
     animation-duration: 10s;
-}
-
-@keyframes identifier {
-    from {
-        transform: rotateY(0deg);
-    }
-
-    to {
-        transform: rotateY(360deg);
-    }
 }
 
 .envelope-front {
@@ -61,7 +50,6 @@ main > div:last-of-type {
 
 .envelope-front > div:nth-child(2) > div {
     overflow: hidden;
-    /* position: relative; */
 }
 
 .envelope-front > div > div {
@@ -122,7 +110,6 @@ main > div:last-of-type {
     border: 1px solid rgba(109, 71, 39, 0.205);    
     border-radius: 0 10px 0 0;
 
-    /* --transform: rotateZ(45deg) translate3d(-50px, 50px, 10px) skew(-15deg, -12deg); */
     --transform: rotateZ(45deg) translateX(-50px) translateY(50px) translateZ(0px) skew(-15deg, -12deg);
     transform: var(--transform);
     -webkit-transform: var(--transform);
@@ -148,7 +135,6 @@ main > div:last-of-type {
     border: 1px solid rgba(109, 71, 39, 0.205);
     border-radius: 0 0px 0 10px;
 
-    /* --transform: rotateZ(45deg) translate3d(50px, -50px, 10px) skew(-12deg, -15deg); */
     --transform: rotateZ(45deg) translateX(50px) translateY(-50px) translateZ(0px) skew(-12deg, -15deg);
     transform: var(--transform);
     -webkit-transform: var(--transform);
@@ -192,7 +178,6 @@ main > div:last-of-type {
     height: var(--envelope-height);
 
     padding: 10px;
-    /* z-index: -1; */
 
     border-top: 1px solid rgba(197, 108, 36, 0.1);
 
@@ -225,10 +210,6 @@ a:focus ~ .envelope-content > div,
 .envelope-scene:active .envelope-content > div,
 .envelope-scene:focus .envelope-content > div {
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0);
-}
-
-.envelope-scene:hover {
-
 }
 
 .envelope-content > div {
@@ -272,8 +253,6 @@ a:focus ~ .envelope-content > div,
 }
 
 .envelope-front {
-    /* margin: 80px 0 30px 0; */
-
     transform: translateZ(1px);
 }
 
@@ -334,18 +313,6 @@ a:hover {
 
 @supports (-webkit-touch-callout: none) {
     /* CSS specific to iOS devices */ 
-    /* .envelope-front {
-        background-image: none;
-        box-shadow: none;
-    }
-
-    .envelope-front .envelope-top,
-    .envelope-front .envelope-left,
-    .envelope-front .envelope-right,
-    .envelope-front .envelope-bottom {
-        display: none;
-    } */
-
     .envelope-front {
         position: relative;
     }
