@@ -210,21 +210,26 @@ main > div:last-of-type {
 
 a:hover ~ .envelope-scene .envelope-content > div, 
 a:active ~ .envelope-scene .envelope-content > div,
-a:focus ~ .envelope-scene .envelope-content > div {
+a:focus ~ .envelope-scene .envelope-content > div,
+.envelope-scene:hover .envelope-content > div,
+.envelope-scene:active .envelope-content > div,
+.envelope-scene:focus .envelope-content > div {
     transform: translateY(0px);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 
 a:hover ~ .envelope-content > div,
 a:active ~ .envelope-content > div,
-a:focus ~ .envelope-content > div {
+a:focus ~ .envelope-content > div,
+.envelope-scene:hover .envelope-content > div,
+.envelope-scene:active .envelope-content > div,
+.envelope-scene:focus .envelope-content > div {
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0);
 }
 
-/* a:hover ~ .envelope-scene .envelope-content > div,
-a:active ~ .envelope-scene .envelope-content > div,
-a:focus ~ .envelope-scene .envelope-content > div {
-} */
+.envelope-scene:hover {
+
+}
 
 .envelope-content > div {
     display: grid;
