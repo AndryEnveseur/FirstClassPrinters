@@ -164,7 +164,7 @@ main {
     background-position: center;
 }
 
-.envelope-button .envelope-content {
+.envelope-content {
     position: absolute;
     width: inherit;
     box-sizing: border-box;
@@ -174,19 +174,21 @@ main {
     z-index: -1;
 
     transition-duration: 400ms;
+
+    border: 1px solid black;
 }
 
 .page-loaded {
     transform: translateY(-80px) translateZ(1px);
 }
 
-a:hover ~ .envelope-button .envelope-content, 
-a:active ~ .envelope-button .envelope-content,
-a:focus ~ .envelope-button .envelope-content {
+a:hover ~ .envelope-content, 
+a:active ~ .envelope-content,
+a:focus ~ .envelope-content {
     transform: translateY(-30px) translateZ(1px);
 }
 
-.envelope-button .envelope-content > div {
+.envelope-content > div {
     display: grid;
     place-items: center;
 
