@@ -42,6 +42,10 @@ main {
     box-sizing: border-box;
 }
 
+.envelope-button > div:nth-child(2) > div {
+    overflow: hidden;
+}
+
 .envelope-button > div > div {
     width: 100%;
     height: 100%;
