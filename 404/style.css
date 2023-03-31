@@ -281,10 +281,6 @@ a:hover {
 
 @supports (-webkit-touch-callout: none) {
     /* CSS specific to iOS devices */ 
-    input {
-        -webkit-appearance: none;
-    }
-
     .envelope-button {
         background-image: none;
         box-shadow: none;
