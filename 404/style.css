@@ -124,7 +124,8 @@ main {
     border: 1px solid rgba(109, 71, 39, 0.205);
     border-radius: 0 0px 0 10px;
 
-    --transform: rotateZ(45deg) translate3d(50px, -50px, 10px) skew(-12deg, -15deg);
+    /* --transform: rotateZ(45deg) translate3d(50px, -50px, 10px) skew(-12deg, -15deg); */
+    --transform: rotateZ(45deg) translateX(50px) translateY(-50px) translateZ(0px) skew(-12deg, -15deg);
     transform: var(--transform);
     -webkit-transform: var(--transform);
     -moz-transform: var(--transform);
