@@ -1,5 +1,6 @@
 :root {
     --envelope-width: 200px;
+    --envelope-height: 125px;
 }
 
 body {
@@ -38,7 +39,7 @@ main > div:last-of-type {
     width: var(--envelope-width);
     border: 1px solid rgba(109, 71, 39, 0.205);    
     border-top: 0;
-    height: 125px;
+    height: var(--envelope-height);
     overflow: hidden;    
     position: relative;
 
@@ -78,26 +79,27 @@ main > div:last-of-type {
     box-sizing: border-box;
 }
 
-.envelope-top {
+.envelope-back {
     position: absolute;
-    height: 200px;
+    height: calc(1.6 * var(--envelope-height));
     width: var(--envelope-width);
 
     box-sizing: border-box;
 
-    /* --transform: translateY(-100px) translateX(-1px) translateZ(100px) skew(0deg, 0deg); */
-    --transform: translateX(0px) translateY(0px) translateZ(-1px);
+    /* --transform: translateX(0px) translateY(0px) translateZ(-1px);
     transform: var(--transform);
     -webkit-transform: var(--transform);
     -moz-transform: var(--transform);
-    -o-transform: var(--transform);
+    -o-transform: var(--transform); */
 
-    /* border: 1px solid red; */
+    transform: translateY(calc(var(--envelope-height) * -1.6)) translateZ(-1px);
 
     overflow: hidden;
+
+    border: 1px solid red;
 }
 
-.envelope-top > div {
+.envelope-back > div {
     box-sizing: border-box;
     border-radius: 10px 0 0 0;
     border: 1px solid rgba(109, 71, 39, 0.205);    
@@ -105,7 +107,7 @@ main > div:last-of-type {
     width: 100%;
     height: 100%;
 
-    --transform: rotateZ(45deg) translateX(0px) translateY(0px) translateX(0px);
+    --transform: rotateZ(45deg) translateX(26px) translateY(26px) translateX(0px);
     transform: var(--transform);
     -webkit-transform: var(--transform);
     -moz-transform: var(--transform);
@@ -113,6 +115,7 @@ main > div:last-of-type {
 
     background-image: url(./src/kraftreciclado_recortado.webp);
     background-position: center;
+
 }
 
 .envelope-front .envelope-left {
