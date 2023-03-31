@@ -114,6 +114,8 @@ main {
 
     background-image: url(./src/kraftreciclado_recortado.webp);
     background-position: center;
+
+    z-index: -1;
 }
 
 .envelope-button .envelope-right {
@@ -139,6 +141,8 @@ main {
 
     background-image: url(./src/kraftreciclado_recortado.webp);
     background-position: center;
+
+    z-index: -1;
 }
 
 .envelope-button .envelope-bottom {
