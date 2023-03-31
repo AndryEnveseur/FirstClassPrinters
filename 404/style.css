@@ -20,6 +20,7 @@ main {
     border-top: 0;
     height: 125px;
     overflow: hidden;
+    position: relative;
     
 
     box-sizing: border-box;
@@ -44,6 +45,7 @@ main {
 
 .envelope-button > div:nth-child(2) > div {
     overflow: hidden;
+    position: relative;
 }
 
 .envelope-button > div > div {
