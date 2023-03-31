@@ -19,9 +19,7 @@ main {
     border: 1px solid rgba(109, 71, 39, 0.205);    
     border-top: 0;
     height: 125px;
-    overflow: hidden;
-    position: relative;
-    
+    overflow: hidden;    
 
     box-sizing: border-box;
     z-index: 0;
@@ -35,7 +33,7 @@ main {
     border: 0;
     padding: 0;
 
-    transform-style: preserve-3d;
+    transform-style: flat;
 }
 
 .envelope-button > div {
@@ -45,7 +43,7 @@ main {
 
 .envelope-button > div:nth-child(2) > div {
     overflow: hidden;
-    position: relative;
+    /* position: relative; */
 }
 
 .envelope-button > div > div {
@@ -303,5 +301,9 @@ a:hover {
     .envelope-button .envelope-bottom {
         display: none;
     } */
+
+    .envelope-button {
+        position: relative;
+    }
 }
 
