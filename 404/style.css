@@ -34,7 +34,7 @@ main {
     border: 0;
     padding: 0;
 
-    transform-style: flat;
+    transform-style: preserve-3d;
 }
 
 .envelope-button > div {
@@ -114,8 +114,6 @@ main {
 
     background-image: url(./src/kraftreciclado_recortado.webp);
     background-position: center;
-
-    z-index: -1;
 }
 
 .envelope-button .envelope-right {
@@ -141,8 +139,6 @@ main {
 
     background-image: url(./src/kraftreciclado_recortado.webp);
     background-position: center;
-
-    z-index: -1;
 }
 
 .envelope-button .envelope-bottom {
