@@ -281,7 +281,7 @@ a:hover {
 
 @supports (-webkit-touch-callout: none) {
     /* CSS specific to iOS devices */ 
-    .envelope-button {
+    /* .envelope-button {
         background-image: none;
         box-shadow: none;
     }
@@ -291,6 +291,6 @@ a:hover {
     .envelope-button .envelope-right,
     .envelope-button .envelope-bottom {
         display: none;
-    }
+    } */
 }
 
