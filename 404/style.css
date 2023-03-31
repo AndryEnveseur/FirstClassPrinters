@@ -101,10 +101,13 @@ main > div:last-of-type {
     -webkit-transform: var(--transform);
     -moz-transform: var(--transform);
     -o-transform: var(--transform);
+    will-change: transform;
 
     background-image: url(./src/kraftreciclado_recortado.webp);
     background-color: #CEAB71;
     background-position: center;
+
+    outline: 1px solid transparent;
 }
 
 .envelope-front .envelope-left {
@@ -184,31 +187,44 @@ main > div:last-of-type {
 
 .envelope-content {
     position: absolute;
-    width: 200px;
+    width: var(--envelope-width);
     box-sizing: border-box;
-    height: 125px;
+    height: var(--envelope-height);
 
     padding: 10px;
     /* z-index: -1; */
 
-    transition-duration: 400ms;
+    border-top: 1px solid rgba(197, 108, 36, 0.1);
 
-    transform: translateY(-140px) translateZ(0px);
+    transform: translateY(calc(-1 * var(--envelope-height))) translateZ(0px);
+}
+
+.envelope-content > div {
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);;
 }
 
 .page-loaded {
-    transform: translateY(-200px) translateZ(0px);
+    transform: translateY(-80px) translateZ(0px);
 }
 
-a:hover ~ .envelope-scene .envelope-content, 
-a:active ~ .envelope-scene .envelope-content,
-a:focus ~ .envelope-scene .envelope-content {
-    transform: translateY(-120px);
-}
-
-a:hover ~ .envelope-scene .envelope-content > div {
+a:hover ~ .envelope-scene .envelope-content > div, 
+a:active ~ .envelope-scene .envelope-content > div,
+a:focus ~ .envelope-scene .envelope-content > div {
+    transform: translateY(0px);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
+
+a:hover ~ .envelope-content > div,
+a:active ~ .envelope-content > div,
+a:focus ~ .envelope-content > div {
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0);
+}
+
+/* a:hover ~ .envelope-scene .envelope-content > div,
+a:active ~ .envelope-scene .envelope-content > div,
+a:focus ~ .envelope-scene .envelope-content > div {
+} */
 
 .envelope-content > div {
     display: grid;
@@ -230,13 +246,7 @@ a:hover ~ .envelope-scene .envelope-content > div {
 
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
     transition-property: transform;
-    transition-duration: 1s;
-}
-
-a:hover ~ .envelope-content > div,
-a:active ~ .envelope-content > div,
-a:focus ~ .envelope-content > div {
-    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0);
+    transition-duration: 600ms;
 }
 
 .envelope-content h3 {
