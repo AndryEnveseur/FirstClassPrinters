@@ -26,3 +26,10 @@ a {
         --general-lateral-padding-page: 20px;
     }
 }
+
+@supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */ 
+    input {
+        -webkit-appearance: none;
+    }
+}
